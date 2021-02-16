@@ -10,18 +10,20 @@
   # if it is snowy, print "coat"
   # if it is icy, print "yak traks"
 
+	
   weather = 'snowy'
+  puts "The weather is #{weather}, so I need: "
 
   if weather == 'sunny'
-    p "sunscreen"
+    puts "sunscreen"
   elsif weather == 'rainy'
-    p "umbrella"
+    puts "umbrella"
   elsif weather == 'snowy'
-    p "coat"
+    puts "coat"
   elsif weather == 'icy'
-    p "yak traks"
+    puts "yak traks"
   else
-    p "good to go!"
+    puts "good to go!"
   end
 
 # Experiment with manipulating the value held in variable 'weather'
@@ -41,11 +43,14 @@
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
-num_quarters = 0
+num_quarters = rand(10)
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
-
+puts "I have #{num_quarters} quarters."
+if num_quarters >=3
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -61,5 +66,17 @@ puts "I don't have enough money for a gumball"
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 1
+cups_of_flour = rand(5)
 has_sauce = true
+if rand(0..1) == 1
+  has_sauce = false
+end
+
+puts "I have #{cups_of_flour} cups of flour it is #{has_sauce} that I have sauce."
+
+if cups_of_flour >= 2 && has_sauce
+  puts "I can make pizza."
+else
+  puts "I cannot make pizza"
+end
+
