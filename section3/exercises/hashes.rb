@@ -8,25 +8,25 @@ foods = {apples: 23, grapes: 507, eggs: 48}
 p foods
 
 # Write code that prints a hash holding zoo animal inventory:
-zoo = #YOUR CODE HERE
+zoo = {zebras: 56, giraffes: 20, lion: 12}
 p zoo
 
 # Write code that prints all of the 'keys' of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+p zoo.keys
 
 # Write code that prints all of the 'values' of the zoo variable 
-# you created above:
-# YOUR CODE HERE
+# you created above
+p zoo.values
 
 # Write code that prints the value of the first animal of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+p zoo[zoo.keys[0]]
 
 # Write code that adds an animal to the zoo hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
-
+zoo[:hyenas] = 15
+p zoo
 
 #-------------------
 # Part 2: Email
@@ -38,18 +38,17 @@ p zoo
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+email = {sender: "jasperlafortune@gmail.com", recipient: "test@example.com", subject: "Reaching Out", greeting: "Hello,", body: "Have you seen my resume? It's great.", closing: "Thanks, Jasper He/Him/His"}
 # Write code that prints your email hash to the terminal.
-
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
-
+p email.values
 
 #-------------------
 # Part 3: Many Emails - OPTIONAL EXTENSION
@@ -99,3 +98,4 @@ puts posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Object Literals, using the same 
 # key-value pairs you used in your email Object above.
 # Then, log the email Array to the console.
+# Nah I'll pass until we have real objects :)
